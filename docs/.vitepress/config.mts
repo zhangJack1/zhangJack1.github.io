@@ -235,8 +235,8 @@ const config = defineConfig({
 
     //编辑本页
     editLink: {
-      pattern: 'https://github.com/zhangjack1/vitepress/edit/main/docs/:path',
-      text: '在GitHub编辑本页'
+      pattern: 'https://zhangjack.vercel.app/',
+      text: '在Vercel编辑本页'
     },
 
     //自定义上下页名
