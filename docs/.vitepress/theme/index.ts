@@ -21,11 +21,11 @@ import kuang from './components/kuang.vue'
 import fold from './components/fold.vue'
 import show from './components/show.vue'
 import { useLive2d } from 'vitepress-theme-website'
-import Vue3StarrySky from 'vue3-starry-sky';
-import 'vue3-starry-sky/lib/style.css';
+// import Vue3StarrySky from 'vue3-starry-sky';
+// import 'vue3-starry-sky/lib/style.css';
 import layout from './components/Layout.vue';
 import notice from './components/notice.vue';
-import VueAmazingUI from 'vue-amazing-ui';
+// import VueAmazingUI from 'vue-amazing-ui';
 import 'vue-amazing-ui/css';
 import picturewall from './components/picturewall.vue';
 import vitepressMusic from 'vitepress-plugin-music';
@@ -65,14 +65,19 @@ export default {
     app.use(FightingDesign);
     app.component('kuang', kuang)
     app.component('fold',fold)
-    app.use(Vue3StarrySky)
+    // app.use(Vue3StarrySky)
     app.component('show',show)
     app.component('layout',layout)
     app.component('notice',notice)
-    app.use(VueAmazingUI)
+    
     app.component('picturewall',picturewall)
     app.component('backtop',backtop)
     vitepressMusic(playlist)
+    onMounted(() => {
+      import('vue-amazing-ui').then((module) => {
+        app.use(module.default)
+      })
+    })
   },
 
 
