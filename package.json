@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@mdit-vue/shared": "^2.0.0",
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "fighting-design": "^0.67.1",
+    "less": "^4.2.0",
+    "medium-zoom": "^1.1.0",
+    "mermaid": "^10.8.0",
+    "naive-ui": "^2.38.1",
+    "sass": "^1.70.0",
+    "vitepress": "^1.0.1",
+    "vitepress-markdown-timeline": "^1.2.1",
+    "vitepress-plugin-comment-with-giscus": "^1.1.12",
+    "vitepress-plugin-mermaid": "^2.0.16",
+    "vitepress-plugin-music": "^0.0.9",
+    "vitepress-theme-website": "^1.0.6",
+    "vue": "^3.4.15"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --port 5173"
+  },
+  "dependencies": {
+    "@vite-pwa/vitepress": "^0.4.0",
+    "markmap-lib": "^0.17.0",
+    "markmap-toolbar": "^0.17.0",
+    "markmap-view": "^0.16.0",
+    "pinia": "^2.1.7",
+    "shiki": "^1.3.0",
+    "undraw-ui": "^1.0.7",
+    "vitepress-plugin-rss": "^0.2.4",
+    "vue-amazing-ui": "^0.1.38",
+    "vue-video-player": "^6.0.0",
+    "vue3-starry-sky": "^0.1.0",
+    "vue3-toastify": "^0.2.1"
+  }
+}

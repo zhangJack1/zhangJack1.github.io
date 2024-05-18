@@ -1,0 +1,78 @@
+/* var.css */
+:root {
+    --vp-c-brand-1: #18794e;
+    --vp-c-brand-2: #299764;
+    --vp-c-brand-3: #30a46c;
+  }
+  
+  .dark {
+    --vp-c-brand-1: #3dd68c;
+    --vp-c-brand-2: #30a46c;
+    --vp-c-brand-3: #298459;
+  }
+  
+  .vp-doc a {
+      text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    background:#3b16cc;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  
+
+
+  .medium-zoom-overlay {
+    z-index: 20;
+  }
+  
+  .medium-zoom-image {
+    z-index: 9999 !important;/* 给的值是21，但是实测盖不住，直接999 */
+  }
+
+
+  /* 链接图标 */
+  .vp-doc a[href^="https://www.youtube.com/"]:before,[href^="https://www.bilibili.com/"]:before
+{
+  content: '➹';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  color: var(--vp-c-green-1);
+  font-size: 13px;
+  border: 2px solid var(--vp-c-green-1);
+  margin-right: 8px;
+  margin-left: 4px;
+  line-height: 15px;
+  padding-left: 1.5px;
+}
+
+/* 提示框背景颜色 */
+:root {
+  --vp-custom-block-tip-bg: var(--vp-c-green-soft);
+}
+
+/* 提示框 */
+.custom-block.tip {
+  border-color: var(--vp-c-green-2);
+}
+
+/* 警告框 */
+.custom-block.warning {
+  /* border-color: #d97706; */
+  border-color: var(--vp-c-yellow-2);
+}
+
+/* 危险框 */
+.custom-block.danger {
+  /* border-color: #f43f5e; */
+  border-color: var(--vp-c-red-2);
+}
